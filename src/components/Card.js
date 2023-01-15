@@ -4,6 +4,7 @@ import star from "../assets/images/Star 1.png";
 export default function Card(props) {
   return (
     <div className="card">
+        {props.openSpots === 0 && <div className="card--badge">SOLD OUT</div>}
       <img src={`${props.img}`} alt="katie-img" className="card--image" />
       <div className="card--stats">
         <img src={star} alt="airbnb logo" className="card--star" />
